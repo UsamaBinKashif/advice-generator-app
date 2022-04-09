@@ -1,0 +1,125 @@
+//Fonts
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;800&display=swap");
+
+//removing default margins and paddings
+*::after,
+*,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//defining all the colors
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--Dark-Blue);
+  font-family: "Manrope", sans-serif;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--Dark-Grayish-Blue);
+  width: 30rem;
+  height: 25rem;
+  border-radius: 5%;
+  padding: 1rem;
+  position: relative;
+
+  .container {
+    margin: auto 0;
+    h1 {
+      color: var(--Light-Cyan);
+      font-size: 1.75rem;
+      font-weight: 800;
+      text-align: center;
+    }
+  }
+  p {
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--Neon-Green);
+  }
+  .seprator {
+    height: 1px;
+    width: 80%;
+    background: var(--Light-Cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 85%;
+
+    &::before {
+      position: absolute;
+      display: block;
+      top: 30%;
+      transform: translateY(-30%);
+      content: "\0022";
+      color: #b3b3b3;
+      font-size: 4rem;
+      padding: 0 1rem;
+      text-align: center;
+      background: var(--Dark-Grayish-Blue);
+    }
+  }
+
+  .btn {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    button {
+      padding: 1.1rem 1.2rem 0.9rem 1.2rem;
+      border: none;
+      outline: none;
+      border-radius: 90%;
+      cursor: pointer;
+      background-color: var(--Neon-Green);
+      transition: all 0.2s ease-in-out;
+      text-decoration: none;
+      &:hover {
+        background-color: hsla(150, 82%, 56%, 0.925);
+
+        box-shadow: 0 0 3rem rgb(72, 211, 134);
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 0.8rem;
+  text-align: center;
+  position: fixed;
+  height: 2rem;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+color: var(--Light-Cyan);
+  a {
+    color: var(--Neon-Green);
+  }
+}
+
+@media (max-width: 680px) {
+  .wrapper {
+    width: 25rem;
+  }
+  .seprator {
+    width: 2rem;
+  }
+}
