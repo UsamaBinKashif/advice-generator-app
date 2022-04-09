@@ -17,8 +17,8 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ## Links
 
-- Solution URL: [link](https://github.com/UsamaBinKashif/profile_card-component)
-- Live Site URL: [link](https://usamabinkashif.github.io/profile_card-component/)
+- Solution URL: [link](https://github.com/UsamaBinKashif/advice-generator-app)
+- Live Site URL: [link](https://advicegeneratorapp.vercel.app/)
 
 <br>
 
